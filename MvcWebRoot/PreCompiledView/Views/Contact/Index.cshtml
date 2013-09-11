@@ -1,0 +1,18 @@
+﻿@model PreCompiledView.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>My Plugin Module Page</h2>
+
+<fieldset>
+    <legend>ContactViewModel</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        <strong>@Html.DisplayFor(model => model.Name)</strong>
+    </div>
+</fieldset>
